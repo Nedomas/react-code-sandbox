@@ -15,7 +15,8 @@ npm install react-code-sandbox --save
 
 ```jsx
 import CodeSandbox from 'react-code-sandbox'
-import { render } from 'react-dom'
+
+import React from 'react'
 import { Text } from 'candour'
 
 const code = `
@@ -30,11 +31,10 @@ render(
 )
 `
 
-render(
-  <CodeSandbox imports={{ React, Text }}>
-    {code}
-  </CodeSandbox>
-)
+// add this to your app
+<CodeSandbox imports={{ React, Text }}>
+  {code}
+</CodeSandbox>
 ```
 
 ## Render
