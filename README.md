@@ -16,6 +16,7 @@ npm install react-code-sandbox --save
 ```jsx
 import CodeSandbox from 'react-code-sandbox'
 import { render } from 'react-dom'
+import { Text } from 'candour'
 
 const code = `
 import { render } from 'react-dom'
@@ -36,12 +37,6 @@ render(
 )
 ```
 
-## How it works
-
-It uses [babel](https://babeljs.io) in the browser to parse and convert the
-source string into a usable JSX component. It will return parsed component
-that was returned through `render` in the source code.
-
 ## Render
 
 `render` is a special global variable that is injected into the code parser.
@@ -58,6 +53,12 @@ import { render } from 'react-dom'
 Any imports that you specify in the source code have no actual effects and are
 removed by the parser. They are replaced with global variables injected by
 the `imports` prop.
+
+## How it works
+
+It uses [babel](https://babeljs.io) in the browser to parse and convert the
+source string into a usable JSX component. It will return parsed component
+that was returned through `render` in the source code.
 
 ## Real world usage
 
