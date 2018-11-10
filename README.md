@@ -1,6 +1,6 @@
 # React code sandbox
 
-React code sandbox helps you render React JSX code in the sandbox. It
+React code sandbox renders React JSX source code from string to components. It
 takes source as a string and returns renderable JSX code.
 
 ## Install
