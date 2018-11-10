@@ -51,8 +51,10 @@ import { render } from 'react-dom'
 ## Imports
 
 Any imports that you specify in the source code have no actual effects and are
-removed by the parser. They are replaced with global variables injected by
-the `imports` prop.
+removed by the parser. They are replaced with variables injected by
+the `imports` prop. When looking at the rendered code example,
+it appears that libraries are imported, but they are just passed as local
+variables under the scenes.
 
 ## How it works
 
