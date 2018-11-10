@@ -3,6 +3,14 @@
 React code sandbox helps you render React JSX code in the sandbox. It
 takes source as a string and returns renderable JSX code.
 
+## Install
+
+```sh
+yarn add react-code-sandbox
+# or
+npm install react-code-sandbox --save
+```
+
 ## Usage
 
 ```jsx
